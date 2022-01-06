@@ -40,6 +40,7 @@ Route::prefix("admin")
             App\Http\Controllers\Admin\DashboardController::class,
             "index",
         ])->name("admin-dashboard");
+        Route::resource('category', 'CategoryController');
     });
 
 Auth::routes();
