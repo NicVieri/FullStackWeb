@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +46,7 @@ Route::prefix("admin")
         ])->name("admin-dashboard");
         Route::resource('category', CategoryController::class);
         Route::resource('user', UserController::class);
+        Route::resource('product', ProductController::class);
     });
 
 Auth::routes();
