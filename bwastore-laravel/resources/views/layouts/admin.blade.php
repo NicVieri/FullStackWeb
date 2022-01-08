@@ -37,13 +37,19 @@
             </a>
             <a
               href="{{ route('product.index') }}"
-              class="list-group-item list-group-item-action {{ (request()->is('admin/product*')) ? 'active' : '' }}"
+              class="list-group-item list-group-item-action {{ (request()->is('admin/product')) ? 'active' : '' }}"
             >
               Products
             </a>
             <a
               href="{{ route('category.index') }}"
               class="list-group-item list-group-item-action {{ (request()->is('admin/category*')) ? 'active' : '' }}"
+            >
+            Galleries
+            </a>
+            <a
+              href="{{ route('category.index') }}"
+              class="list-group-item list-group-item-action {{ (request()->is('admin/category*')) ? 'active' : ''  }}"
             >
               Categories
             </a>
